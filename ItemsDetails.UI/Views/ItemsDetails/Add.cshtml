@@ -1,0 +1,50 @@
+﻿@model ItemsDetails.UI.Models.AddItemViewModel
+
+@{
+}
+
+
+<h1 class="mt-3">Add Item</h1>
+
+<form method="post">
+
+    <div class="mt-3">
+        <label class="form-label">Client_Code</label>
+        <input type="text" class="form-control" asp-for=Client_Code />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Item_Number</label>
+        <input type="text" class="form-control" asp-for=Item_Number />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Display_Item_Number</label>
+        <input type="text" class="form-control" asp-for=Display_Item_Number />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description" />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Unit of Measure</label>
+        <input type="text" class="form-control" asp-for="Uom" />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Price</label>
+        <input type="text" class="form-control" asp-for="Price" />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">High_Value_Indicator</label>
+        <input type="text" class="form-control" asp-for="High_Value_Indicator" />
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary" style="background-color: #04AA6D; border-color: #04AA6D; color: white;">Save</button>
+    </div>
+
+</form>
